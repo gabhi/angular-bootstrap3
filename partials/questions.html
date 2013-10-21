@@ -29,7 +29,7 @@
 
           <div class="list-group">
 
-<a href="#" class="list-group-item" ng-repeat="friend in getValues(typeId) | filter:q">
+<a href="#/question/{{friend.age}}" class="list-group-item" ng-repeat="friend in getValues(typeId) | filter:q">
               <h4 class="list-group-item-heading">{{friend.name}}</h4>
               <p class="list-group-item-text"> {{friend.age}}</p>
             </a>
