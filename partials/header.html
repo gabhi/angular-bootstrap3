@@ -1,35 +1,26 @@
 <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-           <button type="button" class="navbar-toggle">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+<div class="navbar navbar-default navbar-fixed-top" ng-controller="MyCtrl1">
+  <div class="container">
 
-          <button type="button" class="navbar-toggle">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+    <div class="navbar-header">
+       
 
-          <button type="button" class="navbar-toggle">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <button type="button" class="navbar-toggle">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-         <!--/.nav-collapse -->
-      </div>
-    </div>
+      <button  ng-click="go('/view1')"  type="button" class="btn btn-default navbar-btn btn-primary">
+       Home
+     </button>
+     <button type="button"  ng-click="go('/view1')"  class="btn btn-default navbar-btn btn-primary">
+       Profile
+     </button>
+
+
+
+     
+    <button type="button" ng-click="go('/view2')" class="navbar-toggle">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <!--/.nav-collapse -->
+</div>
+</div>

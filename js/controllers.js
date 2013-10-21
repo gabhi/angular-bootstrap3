@@ -3,9 +3,21 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-controller('MyCtrl1', [function() {
+controller('MyCtrl1', ['$scope', '$location',
+	function($scope, $location) {
+		 
+		 $scope.go = function ( path ) {
+  $location.path( path );
+};
 
-}])
+   
+
+
+
+}
+
+
+])
 .controller('QstnsCtrl', ['$scope', '$routeParams',
 	function($scope, $routeParams) {
 		$scope.typeId = $routeParams.typeId;
