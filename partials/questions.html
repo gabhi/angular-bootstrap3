@@ -1,0 +1,57 @@
+<div ng-include="'partials/header.html'"></div>
+
+
+<div class="container theme-showcase">
+
+
+
+
+
+
+
+
+
+  <div class="row">
+    <div class="col-sm-4">
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Category - {{typeId}} -- {{catId}}</h3>
+        </div>
+        <div class="panel-body">
+
+          <form class="form-search">
+            <input type="text" class="input-medium search-query" ng-model="q" >
+          </form>
+
+
+
+
+          <div class="list-group">
+
+<a href="#" class="list-group-item" ng-repeat="friend in getValues(typeId) | filter:q">
+              <h4 class="list-group-item-heading">{{friend.name}}</h4>
+              <p class="list-group-item-text"> {{friend.age}}</p>
+            </a>
+
+            <a class="list-group-item " href="#/questions/{{typeId}}/{{friend.name}}" >
+              {{friend.name}}
+            </a>
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div><!-- /.col-sm-4 -->
+
+  </div>
+
+
+
+
+
+
+</div> <!-- /container -->
+
