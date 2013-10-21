@@ -1,58 +1,58 @@
 <div ng-include="'partials/header.html'"></div>
 
 
-    <div class="container theme-showcase">
-     
-      
+<div class="container theme-showcase">
+ 
+  
 
 
  <div ng-init="friends = [
-{name:'Arrays', age:25, gender:'boy'},
-{name:'Matrix', age:30, gender:'girl'},
-{name:'Linked List', age:28, gender:'girl'},
-{name:'Stacks & Ques', age:15, gender:'girl'},
-{name:'Trees & Graphs', age:28, gender:'girl'},
-{name:'Searching', age:95, gender:'boy'},
-{name:'Sorting', age:50, gender:'boy'} 
-]">
+ {name:'Arrays', age:25, gender:'boy'},
+ {name:'Matrix', age:30, gender:'girl'},
+ {name:'Linked List', age:28, gender:'girl'},
+ {name:'Stacks & Ques', age:15, gender:'girl'},
+ {name:'Trees & Graphs', age:28, gender:'girl'},
+ {name:'Searching', age:95, gender:'boy'},
+ {name:'Sorting', age:50, gender:'boy'} 
+ ]">
 
-      
-      <div class="row">
-        <div class="col-sm-4">
+ 
+ <div class="row">
+  <div class="col-sm-4">
+    
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Category</h3>
+      </div>
+      <div class="panel-body">
+       
+        <form class="form-search">
+          <input type="text" class="input-medium search-query" ng-model="q" >
+        </form>
+
+        
+        
+
+        <div class="list-group">
+
+          <a class="list-group-item " href="#/{{friend.name}}" ng-repeat="friend in friends | filter:q">
+            {{friend.name}}
+          </a>
           
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">Category</h3>
-            </div>
-            <div class="panel-body">
- 
-    <form class="form-search">
-    <input type="text" class="input-medium search-query" ng-model="q" >
-     </form>
+          
 
- 
- 
-
-          <div class="list-group">
-
-<a class="list-group-item " href="#/{{friend.name}}" ng-repeat="friend in friends | filter:q">
-{{friend.name}}
-</a>
-              
-            
-
-          </div>
-         
-            </div>
-          </div>
-        </div><!-- /.col-sm-4 -->
+        </div>
         
       </div>
-
-
-
-      
-
-
-    </div> <!-- /container -->
+    </div>
+  </div><!-- /.col-sm-4 -->
   
+</div>
+
+
+
+
+
+
+</div> <!-- /container -->
+

@@ -52,13 +52,8 @@ controller('MyCtrl1', [function() {
 
 
 		var values1 = [
-		{name:'Arrays', age:25, gender:'boy'},
-		{name:'Matrix', age:30, gender:'girl'},
-		{name:'Linked List', age:28, gender:'girl'},
-		{name:'Stacks & Ques', age:15, gender:'girl'},
-		{name:'Trees & Graphs', age:28, gender:'girl'},
-		{name:'Searching', age:95, gender:'boy'},
-		{name:'Sorting', age:50, gender:'boy'} 
+		{name:'Arrays', age:25, gender:'boy'}
+		 
 		];
 		var values2 = [
 		{name:'Arrays', age:25, gender:'boy'},
@@ -72,9 +67,9 @@ controller('MyCtrl1', [function() {
 
   //1. function way
   $scope.getValues = function(typeId,catId) {
-  	if(typeId === 'basic') {
+  	 
   		return values1;
-  	}
+   
   	 
   }
 
