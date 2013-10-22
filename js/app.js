@@ -17,8 +17,8 @@ config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/intermediate', {templateUrl: 'partials/intermediate.html', controller: 'MyCtrl1'});
 	$routeProvider.when('/advanced', {templateUrl: 'partials/advanced.html', controller: 'MyCtrl1'});
 	$routeProvider.when('/type/:typeId', {templateUrl: 'partials/type.html', controller: 'TypeCtrl'});
-   $routeProvider.when('/questions/:typeId/:catId', {templateUrl: 'partials/questions.html', controller: 'QstnsCtrl'});
-   $routeProvider.when('/question/:qstnId', {templateUrl: 'partials/question.html', controller: 'QstnCtrl'});
+	$routeProvider.when('/questions/:typeId/:catId', {templateUrl: 'partials/questions.html', controller: 'QstnsCtrl'});
+	$routeProvider.when('/question/:qstnId', {templateUrl: 'partials/question.html', controller: 'QstnCtrl'});
 
 	$routeProvider.otherwise({redirectTo: '/view1'});
 }]);

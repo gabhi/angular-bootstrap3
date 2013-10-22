@@ -5,19 +5,19 @@
 angular.module('myApp.controllers', []).
 controller('MyCtrl1', ['$scope', '$location',
 	function($scope, $location) {
-		 
-		 $scope.go = function ( path ) {
-  $location.path( path );
-};
+		
+		$scope.go = function ( path ) {
+			$location.path( path );
+		};
 
-   
-
-
-
-}
+		
 
 
-])
+
+	}
+
+
+	])
 .controller('QstnsCtrl', ['$scope', '$routeParams',
 	function($scope, $routeParams) {
 		$scope.typeId = $routeParams.typeId;
@@ -48,7 +48,7 @@ controller('MyCtrl1', ['$scope', '$location',
   	if(typeId === 'basic') {
   		return values1;
   	}
-  	 
+  	
   }
 
 
@@ -60,12 +60,12 @@ controller('MyCtrl1', ['$scope', '$location',
 .controller('QstnCtrl', ['$scope', '$routeParams',
 	function($scope, $routeParams) {
 		$scope.qstnId = $routeParams.qstnId;
-		 
+		
 
 
 		var values1 = [
 		{name:'Arrays', age:25, gender:'boy'}
-		 
+		
 		];
 		var values2 = [
 		{name:'Arrays', age:25, gender:'boy'},
@@ -79,10 +79,10 @@ controller('MyCtrl1', ['$scope', '$location',
 
   //1. function way
   $scope.getValues = function(typeId,catId) {
-  	 
-  		return values1;
-   
-  	 
+  	
+  	return values1;
+  	
+  	
   }
 
 
